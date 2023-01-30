@@ -1,5 +1,6 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const path = require('path')
 const authRoute = require('./routes/adminRoutes')
 const customerRoute = require('./routes/customerRoute')
 const spendRoute = require('./routes/spendRoutes')
@@ -41,7 +42,10 @@ cloudinary.config({
 })
 
 
-
+app.use(express.static(path.join(__dirname,"./frontend/build")))
+app.get("*",(req,res)=>{
+    res.sendFile(path.join(__dirname,"./frontend/build/index.html"))
+})
 
 mongoose.set({strictQuery:false})
 mongoose.connect(process.env.MONGO_URI).then(()=>console.log(`DB connected ${mongoose.connection.host}`)).catch((err)=>console.log(err))
