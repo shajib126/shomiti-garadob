@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "name":"garadobshomiti",
-  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
-}
