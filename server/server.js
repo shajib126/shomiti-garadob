@@ -39,6 +39,10 @@ cloudinary.config({
     api_key:process.env.API_KEY,
     api_secret:process.env.API_SECRET
 })
+
+
+
+
 mongoose.set({strictQuery:false})
 mongoose.connect(process.env.MONGO_URI).then(()=>console.log(`DB connected ${mongoose.connection.host}`)).catch((err)=>console.log(err))
 const port = process.env.PORT || 8000
