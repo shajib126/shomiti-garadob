@@ -22,12 +22,7 @@ app.use(cors())
 app.use(cookieParser())
 
 //route
-app.get('/',(req,res)=>{
-    res.status(200).json({
-        success:true,
-        message:'This is Nice'
-    })
-})
+
 app.use('/auth',authRoute)
 app.use('/customer',customerRoute)
 app.use('/spend',spendRoute)
