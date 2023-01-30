@@ -21,7 +21,7 @@ app.use(cors())
 app.use(cookieParser())
 
 //route
-app.get('/',async(req,res)=>{
+app.get('/',(req,res)=>{
     res.status(200).json({
         success:true,
         message:'This is Nice'
