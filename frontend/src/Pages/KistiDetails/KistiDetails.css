@@ -1,0 +1,20 @@
+.kistiDetails{
+    width: 90%;
+    margin:auto;
+    
+}
+
+.customer_details{
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    margin:auto;
+    border: 1px solid black;
+    padding: 1rem;
+}
+.customer_details img{
+    width: 200px;
+}
+.customer_details p{
+    
+}

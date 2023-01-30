@@ -1,0 +1,79 @@
+.home{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    width: 90%;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    
+}
+.home_title h2{
+    font-size: 2rem;
+    color: red;
+    font-weight: 300;
+}
+.home_title h4{
+    font-weight: 400;
+    color: aqua;
+    font-size: 1.5rem;
+}
+.ourMember{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+.member_details{
+    box-shadow: 1px 1px 2px 1px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+.member_details h4{
+    font-size: 1rem;
+    font-weight: 200;
+    color: red;
+}
+.member_details img{
+    width: 200px;
+    height: 200px;
+
+}
+.our_service{
+   
+   width: 50%;
+   margin: 10rem auto ;
+}
+.our_service h2{
+    text-align: center;
+    color: rebeccapurple;
+}
+.border hr{
+    width: 10%;
+}
+.our_service ol{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.our_service li{
+    font-size: 1.5rem;
+    color: chocolate;
+}
+.our_events{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    overflow: auto;
+}
+.our_events img{
+    width: 20vw;
+    border: 1px solid gray;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px;
+}

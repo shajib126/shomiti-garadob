@@ -1,0 +1,35 @@
+.create-customer{
+    width: 80%;
+    margin: auto;
+
+}
+.create-customer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.create-customer input{
+    width: 40%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+
+}
+.create-customer button{
+    width: 20%;
+    margin: auto;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    background: violet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: color 0.5s ease;
+}
+.create-customer button:hover{
+    color: red;
+}

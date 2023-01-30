@@ -1,0 +1,48 @@
+.spend{
+    width: 80%;
+    margin:2rem auto;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+.spend_form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 1rem;
+    background-image: linear-gradient(orange,white,rgb(230, 222, 222));
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.spend input{
+    outline: none;
+    padding: 0.5rem;
+
+}
+.add{
+    border: none;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.save{
+    border: none;
+    padding: 1rem;
+    width: 100px;
+    border-radius: 0.2rem;
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    
+}
+.spendlists{
+   width: 40%;
+}

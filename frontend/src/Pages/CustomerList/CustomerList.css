@@ -1,0 +1,56 @@
+.customer_table table{
+  
+}
+.customer_table, table{
+    border-spacing: 1rem;
+}
+.customer_table tr{
+    font-size: 1.4rem;
+    
+}
+.customer_table th{
+    border: 1px solid gray;
+    color: rgb(107, 168, 8);
+    font-weight: 400;
+}
+.customer_table td{
+    padding: 1rem;
+    color: rgb(28, 96, 155);
+}
+.customer_table button{
+    border: none;
+    padding: 0.4rem;
+    color: white;
+    background: orange;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+
+  }
+.customer_table td input{
+    width: 40px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    outline: none;
+
+}
+.customer_table td input:hover .tooltiptext{
+    visibility: visible;
+    
+}
