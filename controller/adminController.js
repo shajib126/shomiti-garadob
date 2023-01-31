@@ -33,9 +33,7 @@ exports.authRegister = async (req, res) => {
     const myCloud = await cloudinary.v2.uploader.upload(avatar,{
         folder:'gkss'
     })
-    user = await Admin.create({name,email,phone,password,avatar:{
-      public_id:myCloud.public_id,url:myCloud.secure_url
-    }})
+    user = await Admin.create({name,email,phone,avatar:{public_id:myCloud.public_id,url:myCloud.secure_url},password})
     res.status(201).json({
         success:true,
         user

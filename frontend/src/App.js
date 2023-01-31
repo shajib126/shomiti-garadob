@@ -20,6 +20,8 @@ const App = () => {
   
   return (
     <Router>
+  <h1>{userData.role}</h1>   
+     
      
       <Header/>
       
@@ -29,13 +31,14 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/gkssreg' element={<Register/>} />
         <Route path='/authlogin' element={<AuthLogin/>} />
-        <Route path='/new-customer' element={userData.role?<CreateCustomer/> : <AuthLogin/>} />
-        <Route path='/admin' element={<AdminDash/>} />
+        <Route path='/new-customer' element={userData?.role?<CreateCustomer/> : <AuthLogin/>} />
+        <Route path='/admin' element={userData?.role?<AdminDash/>:<AuthLogin/>} />
         <Route path='/customers' element={<AllCustomer/>} />
         <Route path='/spend' element={<Spend/>} />
         <Route path='/customer/:id' element={<KistiDetails/>} />
       </Routes>
       <Footer/>
+  
     </Router>
   )
 }

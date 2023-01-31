@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/login">
           <span class="material-symbols-outlined">login</span>লগিন
         </Link>
-        {userData.role && <Link to='/admin'>Admin Dashboard</Link>}
+        {userData?.role && <Link to='/admin'>Admin Dashboard</Link>}
       </nav>
     </div>
   );
